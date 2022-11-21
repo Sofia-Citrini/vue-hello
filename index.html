@@ -9,14 +9,19 @@
     <title>VUE</title>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <div id="app">
+        
+        <div class="img-container">
+            <img v-bind:src="logo" alt="">
+        </div>
+        
         <h1>{{title}}</h1>
-
-        <img v-bind:src="logo" alt="">
+            
     </div>
 
     <script src="js/main.js"></script>
